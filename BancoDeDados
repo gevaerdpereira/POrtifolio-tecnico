@@ -1,1 +1,30 @@
+1 create table editora(
+
+2 titulo varchar,
+
+3 isbn varchar primary key,
+
+4 autor varchar,
+
+5 assunto varchar,
+
+6 valor decimal (5,2)
+
+7)
+
+8 select * from editorawhere valor<=50;
+
+9 select * from editorawhere valor<=50 and valor >=40;
+16 select * from editora where autor like 'R%';
+
+11 select * from editora where assunto like '“%poesia*';
+12 select * from editora where id = 1 or id =5;
+
+13 select * from editora where id in (1,5);
+
+14  select * from editora where autor in ('Flo Menezes')
+15
+
+16 alter table editora drop column isbn, add column isbn varchar,
+17 add columm id int primary key
 
